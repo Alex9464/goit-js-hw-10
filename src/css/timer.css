@@ -22,43 +22,94 @@ body {
   border: none;
   border-radius: 50px;
   padding: 12px 24px;
-  box-shadow: 
-    0 4px 9px rgba(0, 0, 0, 0.1),
-    0 -3px 7px rgba(255, 255, 255, 0.9),
-    0 -2px 2px rgba(255, 255, 255, 0.9);
-  transition: all 0.3s ease;
+  
   cursor: pointer;
+  box-shadow: 
+    0 8px 15px rgba(0, 0, 0, 0.2), 
+    0 -4px 8px rgba(255, 255, 255, 0.8);
+  
+  transition: all 0.3s ease;
 }
 
 .btns:hover {
   background-color: #fdd1b7;
   color: #fff;
   box-shadow: 
-    0 8px 15px rgba(0, 0, 0, 0.2), 
-    0 -4px 8px rgba(255, 255, 255, 0.8);
-  transform: translateY(-2px);
+    0 4px 9px rgba(0, 0, 0, 0.1),
+    0 -3px 7px rgba(255, 255, 255, 0.9),
+    0 -2px 2px rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  
-  /* Таймер */
+.flatpickr-input {
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 32px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.flatpickr-input:active, .flatpickr-input:hover {
+  border-color: #4e75ff;;
+}
+
+.start-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-left: 8px;
+  width: 75px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  color: #fff;
+  background: #4e75ff;
+}
+
+.start-btn:disabled {
+  color: #989898;
+  background: #cfcfcf;
+}
+
+.start-btn:hover {
+  color: #fff;
+  background: #6c8cff;
+}
+
   .timer {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     justify-content: center;
     align-items: center;
   }
   
   .field {
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
   
   .value {
-    font-size: 2rem;
-    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+  }
+
+  .label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
   }
